@@ -1,0 +1,299 @@
+
+#vodview_container {
+  position: absolute;
+  
+  width: 1280px;
+  height: 720px;
+
+  top: 0;
+
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+  
+  #leftContainer {
+    position: absolute;
+    top : 0;
+    left : 0;
+    width: 375px;
+    height: 720px;
+    background-color: rgba(0,32,95,0.3);
+  }
+  
+  #separatorAction {
+    position: absolute;
+    top : 0;
+    left : 360px;
+    width: 15px;
+    height: 720px;
+    background-image: url(../resources/graphicalAssets/navigation/separateur-action.png);
+  }
+  
+  #rightContainer {
+    position: absolute;
+    top : 0;
+    left : 375px;
+    width: 905px; /*1280px - 375px*/
+    height: 720px;
+  }
+      
+  #vodAsset {
+    position: absolute;
+    top : 194px;
+    left : 40px;
+    width: 320px;
+    height: 240px;
+  }
+  
+  #vodBorderAsset {
+    position: absolute;
+    top : 202px;
+    width: 320px;
+    height: 2px;
+    border-top : 1px solid white;
+    color:white;
+  }
+  
+
+  #vodTitle {
+    position: absolute;
+    top : 190px;
+    left : 25px; /* 400px - 375px*/
+    width: 600px;
+    line-height: 40px;
+    font-family: "EffraLight";
+    font-size: 40px;
+    color: white;
+  }
+  
+  .horizontalPage strong {
+    display: block;
+    font-family: "EffraMedium";
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 22px;
+    color: white;
+  }
+  .horizontalPage p {
+    margin: 0;
+    display: block;
+    font-family: "EffraLight";
+    font-size: 22px;
+    line-height: 25px;
+    width: 650px;
+    color: white;
+    overflow: hidden;
+  }
+    
+  #moods {
+    margin-top : 10px;
+  }
+  
+  #director {
+    margin-top: 10px;  
+  }
+  
+  #actors {
+    line-height: 24px;
+  }
+  
+/*  #synopsisLine1 {
+    margin-top : 10px;
+    text-align: justify;
+  }
+
+  #synopsisLine2 {
+    line-height: 24px;
+    text-align: justify;
+  }*/
+
+  .synopsis {
+    position: relative;
+    text-align: justify;
+  }
+
+
+
+
+  #pagesContainer{
+    position: absolute;
+    top: 233px; 
+    left: 25px; /* 400 - 375 */
+    width: 650px;
+    height: 175px; 
+    overflow: hidden;
+  }
+
+  #pagesContent{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 650px;
+    height: 175px; 
+  }
+  #pagesList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 175px; 
+    width: 10000px;
+  }
+  .horizontalPage {
+    /*display: inline-block;*/
+    float: left;
+    width: 650px;
+    height: 175px;
+  }
+  
+  #leftLabels {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top : 464px; /* 482px - 18px*/
+    left : 50px;
+    width: 300px; /* Maxi */
+    font-family: "EffraLight";
+    font-size: 18px;
+    color: white;
+  }
+  
+  #leftValues {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top : 464px; /* 482px - 18px*/
+    left: 150px;
+    width: 200px;
+    text-align: right;
+    font-family: "EffraMedium";
+    font-size: 18px;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .propItem {
+    line-height: 26px;
+    height: 26px;
+  }
+  
+  #numberPages {
+    position: absolute;
+    top: 413px; /* 434px - 25px */
+    left: 284px;/* 725px - (112/2)px - 375px*/
+    width: 112px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-family: "EffraLight";
+    font-size: 25px;
+    color: white;
+  }
+  
+  #leftArrowPages {
+    position: absolute;
+    top: 413px;
+    left: 262px;/* 725px - (112/2)px - 8px - 375px = 276px - (size text)*/
+    font-family: "EffraLight";
+    font-size: 25px;
+    color: white;
+  }
+  
+  #rightArrowPages {
+    position: absolute;
+    top: 413px;
+    left: 404px;/* (725px - (112/2)px) + 112px + 8 - 375px*/    
+    font-family: "EffraLight";
+    font-size: 25px;
+    color: white;
+  }
+  
+  
+  .opacityArrowPages {
+    opacity: 0.3;
+  }
+  
+  /* The layout and position for the list */
+  #actionMenuList{
+    padding-top: 24px;
+    list-style-type: none;
+    margin: 0;
+  }
+  
+  .menuItem {
+    font-family: EffraLight;
+    font-size: 32px;
+    line-height: 36px;
+    height: 36px;
+    color: rgba(255,255,255,1);
+  }
+  
+  /* The view port for the action menu list */
+  #actionMenuContainer{
+    background-image:-webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 9.6%,rgba(255,255,255,1) 90.4%,rgba(255,255,255,0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+    position: absolute;
+    top: 453px;
+    width: 650px;
+    height: 228px; /* 681px - 453px */
+    left : 25px; /* 400px - 375px*/
+    overflow: hidden;
+  }
+  
+  .focusedMethod {
+    font-family: EffraHeavy;              
+    font-size: 32px;
+    line-height: 36px;
+    height: 36px;
+    color: white;
+  }
+
+  #vodAsset{
+    top : 194px;
+    left : 40px;
+    position: absolute;
+    display: inline; 
+    width: 320px;
+    height: 240px;
+    float: left;
+  }  
+
+  #vodTitleAsset {
+    position: absolute;
+    top: 210px; /* 202 + 2 + 6 */            
+    margin-left: 10px;
+    font-family: EffraHeavy;  
+    font-size: 22px;
+    line-height: 22px;
+    height: 22px;
+    width: 300px;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  #numberPages.vodPagesCounterBold,
+  #leftArrowPages.vodPagesCounterBold,
+  #rightArrowPages.vodPagesCounterBold { font-family: 'EffraHeavy'; }
+  
+/*  No more used for the moment. 
+  #groupingIcon {
+    position: absolute;
+    top : 162px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../resources/graphicalAssets/icons/ico_Content_grouping.png);      
+    background-repeat: no-repeat;      
+  }
+  */
+
+  .animablePage {
+    -webkit-transition: margin-left 200ms ease-out;
+  }
+  
+  .animableMenu {
+    -webkit-transition: margin-top 200ms ease-out;
+  }

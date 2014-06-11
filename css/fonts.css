@@ -1,0 +1,64 @@
+/* A */
+@font-face {
+  font-family: "EffraLight";
+  src: url('../resources/fonts/EffraLight-Regular.ttf') format('opentype');
+  font-weight : normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "EffraLightItalic";
+  src: url('../resources/fonts/EffraLight-Italic.ttf') format('opentype');
+  font-weight : normal;
+  font-style: italic;
+}
+/* B */
+@font-face {
+  font-family: "EffraMedium";
+  src: url('../resources/fonts/EffraMedium-Regular.ttf') format('opentype');
+  font-weight : normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "EffraMediumItalic";
+  src: url('../resources/fonts/EffraMedium-Italic.ttf') format('opentype');
+  font-weight : normal;
+  font-style: italic;
+}
+/* C */
+@font-face {
+  font-family: "EffraHeavy";
+  src: url('../resources/fonts/EffraHeavy-Regular.ttf') format('opentype');
+  font-weight : normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "EffraHeavyItalic";
+  src: url('../resources/fonts/EffraHeavy-Italic.ttf') format('opentype');
+  font-weight : normal;
+  font-style: italic;
+}
+/* D */
+@font-face {
+  font-family: "EffraRegular";
+  src: url('../resources/fonts/Effra-Regular.ttf') format('opentype');
+  font-weight : normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "EffraBold";
+  src: url('../resources/fonts/Effra-Bold.ttf') format('opentype');
+  font-weight : bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "EffraItalic";
+  src: url('../resources/fonts/Effra-Italic.ttf') format('opentype');
+  font-weight : normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "EffraBoldItalic";
+  src: url('../resources/fonts/Effra-BoldItalic.ttf') format('opentype');
+  font-weight : bold;
+  font-style: italic;
+}

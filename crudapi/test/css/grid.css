@@ -1,0 +1,7 @@
+﻿.focused {
+    border: 3px red groove;
+}
+
+.unfocused {
+    border: 3px yellow groove;
+}

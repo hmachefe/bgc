@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title> Menu </title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Menu with test App" />
+        <meta name="keywords" content="css3, transitions, menu, blur, navigation, typography, font, letters, text-shadow" />
+        <link rel="shortcut icon" href="./res/logo/cisco.png"> 
+        <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+        <link rel="stylesheet" type="text/css" href="css/hub.css" />
+
+        <!-- LIB -->
+        <script type="text/javascript" src="./lib/zepto.js"></script>
+
+        <!-- CRUD API -->
+        <script type="text/javascript" src="../src/crud_impl.js"></script>
+        <script type="text/javascript" src="../src/crud_api.js"></script>
+    </head>
+    <body style="background-color: black">		
+        <div class="container">
+			<div class="header">
+                <strong style="color: yellow">Go back to Menu</strong>(KEY_0)
+                <span class="right">
+                    <strong style="color: yellow"> Next : </strong><span style="margin-right: 60px">GRID (KEY_6) <strong style="color: yellow">&raquo;</strong></span>
+                </span>
+                <div class="clr"></div>
+            </div> 	
+			
+			<h1 style="color:yellow;display:inline;">HUB : </h1>
+			<h2 style="display:inline;font-size: 20px;"><strong>Select URI </strong><span style="margin-left: 15px;color: yellow">up</span>(left) <span style="color: yellow">down</span>(right) <span style="color: yellow">enter</span>(OK)</h2>
+			<div style="display:inline; width:300px; height:24px; overflow:hidden;position: absolute;margin-top: 16px;margin-left: 20px;border:3px yellow groove">
+				<div id="select" style="font-size: 20px;text-align: center;">
+					<div id="profile">data://cisco/adele/hub/profile</div>
+					<div id="social">data://cisco/adele/hub/social</div>
+					<div id="tv">data://cisco/adele/hub/tv</div>
+					<div id="onDemand">data://cisco/adele/hub/onDemand</div>
+					<div id="library">data://cisco/adele/hub/library</div>
+					<div id="reco">data://cisco/adele/hub/reco</div>
+					<div id="music">data://cisco/adele/hub/music</div>
+					<div id="football">data://cisco/adele/hub/football</div>
+				</div>
+			</div>
+            <div style="display:inline;margin-left: 340px;font-size: 20px;border:3px yellow groove;padding-left: 5px;">
+                 CB duration :
+                <div id="cb_duration" style="display:inline;padding-right: 5px;">0</div>
+            </div>
+			<div id="asset">
+        </div>
+		<script src="js/hub.js"></script>
+    </body>
+</html>

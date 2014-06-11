@@ -1,0 +1,105 @@
+/*
+	Video Component
+*/
+
+/* Video container */
+#vc-video-container {
+	position: fixed;
+	overflow: hidden;
+}
+
+#vc-video-container.vc-pip {
+	top: 30px;
+	left: 1044px;
+
+	width: 196px;
+	height: 110px;
+}
+
+#vc-pip-petale {
+	position: absolute;
+	top: 0;
+	left: 1004px;
+
+	opacity: 0;
+
+	-webkit-transition: opacity 300ms linear;
+}
+#vc-pip-petale.vc-show-petale { opacity: 1; }
+
+/* Video element */
+#vc-video {
+	position: absolute;
+	top: 0;
+	left: 100%;
+
+	width: 100%;
+	height: 100%;
+
+	-webkit-animation-duration: 300ms;
+	-webkit-transition-timing-function: linear;
+
+	overflow: hidden;
+}
+
+#vc-video.vc-video-show { left: 0; }
+
+/* If the video tag is not requested, display a background color */
+#vc-video.vc-no-video { background-color: rgba(12, 45, 125, 0.5); }
+
+
+
+
+
+/* ANIMATIONS */
+
+@-webkit-keyframes srcLeftToRight {
+	from { left: -100%; }
+	to { left: 0; }
+}
+@-webkit-keyframes destLeftToRight {
+	from { left: 0; }
+	to { left: 100%; }
+}
+
+/* Animation from right to left */
+@-webkit-keyframes srcRightToLeft {
+	from { left: 100%; }
+	to { left: 0; }
+}
+@-webkit-keyframes destRightToLeft {
+	from { left: 0; }
+	to { left: -100%; }
+}
+
+/* Animation from top to bottom */
+@-webkit-keyframes srcTopToBottom {
+	from { top: -100%; }
+	to { top: 0; }
+}
+@-webkit-keyframes destTopToBottom {
+	from {
+		left: 0;
+		top: 0;
+	}
+	to {
+		left: 0;
+		top: 100%;
+	}
+}
+
+/* Animation from bottom to top */
+@-webkit-keyframes srcBottomToTop {
+	from { top: 100%; }
+	to { top: 0; }
+}
+@-webkit-keyframes destBottomToTop {
+	from {
+		left: 0;
+		top: 0;
+	}
+	to {
+		left: 0;
+		top: -100%;
+	}
+}

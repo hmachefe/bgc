@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title> Menu </title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Menu with test App" />
+        <meta name="keywords" content="css3, transitions, menu, blur, navigation, typography, font, letters, text-shadow" />
+        <link rel="shortcut icon" href="./res/logo/cisco.png">
+        <link rel="stylesheet" type="text/css" href="css/menu.css" />
+        <link rel="stylesheet" type="text/css" href="css/grid.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+        <!-- LIB -->
+        <script type="text/javascript" src="./lib/zepto.js"></script>
+
+        <script type="text/javascript" src="../src/crud_impl.js"></script>
+        <script type="text/javascript" src="../src/crud_api.js"></script>
+    </head>
+    <body style="background-color: black">
+        <div class="container">
+			<div class="header">
+                <strong style="color: yellow">Go back to Menu</strong>(KEY_0)
+                <div style="display:inline;margin-left: 227px;font-size: 20px;border:3px yellow groove;padding-left: 5px;">
+                    CB duration :
+                    <div id="cb_duration" style="display:inline;padding-right: 5px;">0</div>
+                </div>
+                <span class="right">
+                    <strong style="color: yellow">&laquo; Previous : </strong> <span style="margin-right: 60px">HUB (KEY_4)</span>
+                    <div class="clr"></div>
+                </span>
+            </div>
+
+            <h1 style="color:yellow;display:inline;">GRID : </h1>
+            <h2 style="display:inline;font-size: 20px;margin-left: -20px;">
+                <strong  style="border: 3px yellow groove;">Nb of chls requested : 40
+                    <span id="total" style="color: yellow;border-left: 3px yellow groove;border-right: 3px yellow groove;padding-left: 5px;padding-right: 5px;"></span>
+                    <span id="remain" style="color: yellow"></span>
+                </strong>
+                <strong style="border: 3px yellow groove;margin-left: 12px;">
+                    <span id="currentTime"></span>
+                    <span id="rangeTime" style="border-left: 3px yellow groove;padding-left: 5px;"></span>
+                </strong>
+            </h2>
+
+            <div id="asset"></div>
+            <div id="events"></div>
+
+            <script src="js/grid_channels.js"></script>
+            <script src="js/grid_events.js"></script>
+        </div>
+    </body>
+</html>
