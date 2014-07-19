@@ -1,13 +1,36 @@
-<HTML>
+
+<html>
 <head>
-<title>Redirection en htm</title>
-<meta http-equiv="refresh" content="3; URL=http://hugo.machefer.free.fr/vid.html">
+	<script>
+	  function init() {
+      enableVideoClicks();
+    }
+
+    function enableVideoClicks() {
+      var videos = document.getElementsByTagName('video') || [];
+      for (var i = 0; i < videos.length; i++) {
+        // TODO: use attachEvent in IE
+        videos[i].addEventListener('click', function(videoNode) {
+          return function() {
+            videoNode.play();
+          };
+        }(videos[i]));
+      }
+    }
+	</script>
 </head>
 
-	<body bgcolor="green">
-	<H1>
-		redirection pending
-	</H1>
 
-	</body>
-</HTML>
+<body bgcolor="cyan" onload="init();">
+<H1>
+    hugo.machefer
+</H1>
+    <video autoplay onclick="this.play();" controls>
+	Your browser does not support the video tag.
+        <source src="http://hugo.machefer.free.fr/big_buck_bunny.mp4" />
+        <source src="http://hugo.machefer.free.fr/big_buck_bunny.webm" />		
+        <source src="http://hugo.machefer.free.fr/big_buck_bunny.ogv" />				
+    </video>
+</body>
+
+</html>
